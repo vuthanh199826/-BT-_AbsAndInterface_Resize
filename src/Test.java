@@ -14,11 +14,12 @@ public class Test {
 
         System.out.println("After");
 
-        ((Circle) obj[0]).resize(Math.random() * 100);
-        ((Retangle) obj[1]).resize(Math.random() * 100);
-        ((Square) obj[2]).resize(Math.random() * 100);
+//        ((Circle) obj[0]).resize(Math.random() * 100);
+//        ((Retangle) obj[1]).resize(Math.random() * 100);
+//        ((Square) obj[2]).resize(Math.random() * 100);
 
         for (int i = 0; i < obj.length; i++) {
+            ((Resizeable)obj[i]).resize(Math.random()*100);
             System.out.println(obj[i]);
         }
     }
